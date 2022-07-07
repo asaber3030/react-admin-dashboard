@@ -1,5 +1,5 @@
 # Admin Dashboard
-![MarineGEO circle logo](/taken-imgs/img/01.png "MarineGEO logo")
+![MarineGEO circle logo](/taken-images/img/01.png "MarineGEO logo")
 
 
 # Getting Started with Create React App
