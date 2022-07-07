@@ -1,5 +1,5 @@
 # Admin Dashboard
-![Dashboard Images](taken-images/img/01.png)
+![Dashboard Images](./taken-images/img/01.png)
 
 
 # Getting Started with Create React App
