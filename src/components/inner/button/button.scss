@@ -1,0 +1,80 @@
+@import '../../../assets/scss/global-assets';
+
+.buttons-container {
+  @include flexBox(space-between);
+  .d-flex { display: flex; }
+  .collections {
+    border-right: 1px solid #ddd;
+    > h1 {
+      font-size: 40px;
+      color: #555;
+      margin: 0 0 15px;
+      font-weight: 900;
+      @include flexBox(flex-start, center);
+      svg { margin-right: 10px; font-size: 40px; }
+    }
+    flex: 2;
+    padding: 30px;
+    .buttons-collection {
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      @include boxShadow();
+      .title {
+        margin: 10px 0;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #444;
+      }
+      button { margin-right: 5px; margin-bottom: 4px; }
+      .btn-custom {
+        @include flexBox(center, center);
+        @include transition();
+        padding: 5px 20px;
+        cursor: pointer;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #555;
+        background-color: transparent;
+      }
+      .btn-secondary { &:hover { background-color: #000; color: #FFf; border-color: #000; } }
+      .btn-primary { color: $blue-dark; border-color: $blue-dark; &:hover { background-color: $blue-dark; color: #FFF; } }
+      .btn-warning { color: $yellow-dark; border-color: $yellow-dark; &:hover { background-color: $yellow-dark; color: #FFF; } }
+      .btn-error { color: $red-dark; border-color: $red-dark; &:hover { background-color: $red-dark; color: #FFF; } }
+      .btn-info { color: #56bcff; border-color: #56bcff; &:hover { background-color: #56bcff; color: #FFF; } }
+      .btn-success { color: $green-dark; border-color: $green-dark; &:hover { background-color: $green-dark; color: #FFF; } }
+      .btn-custom.round {
+        border-radius: 30px;
+      }
+    }
+  }
+  .list {
+    padding: 25px;
+    flex: 1;
+    h1 { margin: 10px 0 15px; text-align: center; }
+    ul { padding-bottom: 10px; }
+    ul:not(:last-of-type) { border-bottom: 1px solid #ddd; }
+    li {
+      @include flexBox(flex-start, center);
+      list-style: none;
+      padding-left: 15px;
+      color: gray;
+      line-height: 2;
+      font-size: 18px;
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+        padding: 0;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+        width: 100%;
+        &:hover { background-color: #333; color: #FFF; }
+      }
+      svg { margin-right: 5px; color: #7451f8; }
+    }
+  }
+}

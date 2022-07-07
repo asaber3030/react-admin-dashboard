@@ -1,0 +1,405 @@
+@import "global";
+@import '../assets/scss/global-assets';
+
+.App.dark {
+  background-color: #111;
+
+  // Global
+  .page-container, .main-container {
+    background-color: #111 !important;
+  }
+  // Navbar
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+  svg { color: $mainColor }
+  .table {
+    background-color: #111;
+  }
+  .MuiDataGrid-row { color: $mainColor !important }
+  .css-1jbbcbn-MuiDataGrid-columnHeaderTitle { color: #999; &:hover { color: #FFF !important; } }
+  .MuiDataGrid-menuIcon { color: #FFF !important; }
+  .MuiDataGrid-columnHeaderDraggableContainer { color: $mainColor !important; }
+  .navbar {
+    background-color: #111;
+    border-bottom-color: #444;
+    .search {
+      border-color: #333;
+      input { color: #fff; }
+      svg { color: $mainColor; }
+    }
+    .items {
+      color: $mainColor;
+    }
+  }
+
+  // Widgets
+  .widget {
+    @extend %importDarkBoxShadow;
+    background-color: #222;
+    .counter { color: $mainColor; }
+    .link { color: $mainColor; }
+  }
+
+  // Sidebar
+  .sidebar {
+    background-color: #111;
+    border-right-color: #444;
+    .top {
+      border-bottom-color: #444;
+    }
+    .bottom {
+      border-top-color: #444;
+    }
+
+    li {
+      color: #7451f8;
+
+      &:hover {
+        background-color: #222
+      }
+
+      a {
+        color: GRAY;
+        svg { color: GRAY; }
+
+        &.active {
+          background-color: #333 !important;
+        }
+      }
+    }
+  }
+
+  // Progress Bar
+  .featured {
+    @extend %importDarkBoxShadow;
+    background-color: $darkBg;
+    .item-title { color: $mainColor; }
+    .title-top { color: $mainColor }
+  }
+
+
+  // Tables:
+  .MuiTableContainer-root {
+    width: 100% !important;
+    box-shadow: 0 2px 3px $boxShadowColor !important;
+    background-color: $darkBg;
+    .MuiTable-root {
+      background-color: $darkBg;
+      .MuiTableCell-root {
+        color: $mainColor !important;
+        border-bottom-color: #444;
+      }
+    }
+  }
+  .MuiDataGrid-root {
+    width: 100% !important;
+    box-shadow: 0 2px 3px $boxShadowColor !important;
+    background-color: $darkBg;
+    height: 650px;
+    border: none;
+    .css-f3jnds-MuiDataGrid-columnHeaders {
+      border-bottom-color: #444 !important;
+    }
+    .MuiDataGrid-row {
+      border-bottom-color: #444 !important;
+    }
+  }
+  .MuiTablePagination-displayedRows { color: $mainColor !important; }
+  .globalActions {
+    #blacked { color: #FFF !important; }
+  }
+  .MuiDataGrid-selectedRowCount { color: $mainColor; }
+  .MuiDataGrid-footerContainer { border-top: 1px solid #444; }
+
+  // Alerts Component
+  .alerts-container {
+    > h1 { color: #FFF; }
+    .alerts-show {
+      h2 { color: $mainColor; }
+      .MuiPaper-root { width: 100% !important; box-shadow: none !important; color: #ddd !important; }
+    }
+  }
+
+  // Box Container
+  .box-container {
+    .MuiPaper-root {
+      height: 100% !important;
+      background-color: $darkBg;
+      min-height: 100% !important;
+      box-shadow: 0 2px 4px #111 !important;
+      .MuiCardHeader-content {
+        color: #FFF !important;
+        .MuiCardHeader-subheader { color: gray; }
+      }
+    }
+    .MuiTypography-root { color: gray; }
+    .MuiPaper-elevation {
+      height: 100% !important;
+      min-height: 100% !important;
+    }
+  }
+
+  // Button Container
+  .buttons-container {
+    .collections { border-right-color: #444; border-bottom-color: #444; }
+    .buttons-collection {
+      background-color: $darkBg;
+      padding: 5px 25px;
+      @extend %importDarkBoxShadow;
+      .btn-secondary { color: #FFF; }
+      .title { color: gray; }
+    }
+    .list {
+      h1 { color: $mainColor; }
+      ul { border-bottom-color: #444; }
+      a {
+        color: $mainColor;
+        border-color: #444;
+      }
+    }
+  }
+
+  // Charts
+  .all-charts-page {
+    > h1 {
+      color: $mainColor;
+    }
+    .charts-components {
+      .chart-component {
+        background-color: #000 !important;
+        @extend %importDarkBoxShadow;
+      }
+    }
+  }
+  .inner-charts-page {
+    .my-charts {
+      .title {
+        .heading-title {
+          background-color: #111;
+          @extend %importDarkBoxShadow;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+
+  // Chips
+  .chip-container {
+    > h1 { color: gray !important; }
+    .chips-collection {
+      background-color: $darkBg;
+      @extend %importDarkBoxShadow;
+      border-color: $darkBg;
+      > h1 { color: $mainColor; }
+      .MuiChip-label { color: $mainColor; }
+    }
+  }
+
+  // Grid
+  .grid-container {
+    > h1 { color: $mainColor; border-bottom-color: #444; }
+    .grid-collection {
+      border-bottom-color: #444 !important;
+      h3 { color: gray !important; }
+      .MuiPaper-root {
+        box-shadow: 0 2px 4px #111 !important;
+      }
+      pre.language-typescript {
+        background-color: #1e1e1e !important;
+      }
+    }
+  }
+
+  // Forms
+  .form-container {
+    .custom-code { background-color: #333 !important; color: gray !important; border-radius: 3px }
+    .left-content {
+      > h1 { color: $mainColor; }
+      .inputs-collection {
+        border-bottom-color: #444;
+      }
+      .inputs-show {
+        background-color: #555;
+        box-shadow: none;
+      }
+    }
+    .add-divider { border-bottom-color: #777 !important; }
+    .right-content {
+      h1 {
+        color: $mainColor;
+      }
+      h5 { color: gray; }
+    }
+  }
+
+  // Notifications
+  .notifications-container {
+    @extend %importDarkBoxShadow;
+    border-color: transparent;
+    background-color: $darkBg;
+    .title {
+      border-bottom: 1px solid #444;
+      h2 { color: $mainColor; }
+    }
+    .notifications {
+      .notification:hover { background-color: #333; }
+      .text {
+        h4 { color: #fff; }
+      }
+    }
+  }
+
+  // Profile
+  .profile-container {
+    .left-part {
+      .top-content, .contact-information, .rating {
+        @extend %importDarkBoxShadow;
+        background-color: $darkBg;
+        > h3 { color: $mainColor; }
+        ul {
+          li { border-bottom-color: #444;  span { color: gray; } }
+        }
+        .full { svg { color: $yellow-dark; } }
+      }
+    }
+    .profile-links {
+      @extend %importDarkBoxShadow;
+      background-color: $darkBg;
+      border-color: #555;
+      li {
+        border-right-color: #555;
+        a {
+          color: $mainColor;
+          &:hover { background-color: #555; }
+        }
+      }
+    }
+    .stats {
+      .stat {
+        .CircularProgressbar-path { stroke: #111 !important; }
+        .CircularProgressbar-text { fill: gray !important; }
+        .CircularProgressbar-trail { stroke: #333 !important; }
+        @extend %importDarkBoxShadow;
+        background-color: $darkBg;
+        svg { color: $blue-dark !important; }
+        h2 { color: $mainColor; }
+      }
+    }
+  }
+
+  // Settings
+  .settings-sidebar {
+    border-right-color: #444;
+    .top-part {
+      padding: 10px 30px;
+      border-bottom-color: #444;
+      h3 { color: $mainColor !important; }
+    }
+    .links {
+      .add-sep { border-bottom-color: #444 !important; }
+      a {
+        color: gray !important;
+        &:hover { background-color: #333 !important; }
+        &.active { background-color: #333 !important; }
+      }
+    }
+  }
+  .settings-container {
+    .right-part {
+      h2 { border-bottom-color: #333; }
+      .options {
+        li {
+          @extend %importDarkBoxShadow;
+          background-color: $darkBg;
+          span { color: $mainColor; }
+        }
+      }
+      .maintenance {
+        @extend %importDarkBoxShadow;
+        background-color: $darkBg;
+        div {
+          border-color: #333;
+        }
+        h2 { color: $mainColor; }
+        span { color: $mainColor; }
+      }
+      .change-username {
+        border-bottom-color: #444;
+        h3 { color: $mainColor; margin-bottom: 8px !important }
+      }
+      .delete-account {
+        @extend %importDarkBoxShadow;
+        background-color: $darkBg;
+        h2 { color: $mainColor; }
+      }
+      .emails {
+        .email {
+          border-bottom-color: #444;
+        }
+      }
+      .add-new-email {
+        box-shadow: none;
+        background-color: #111;
+        margin: 10px 0;
+      }
+      .phones {
+        .phone {
+          border-bottom-color: #444 !important;
+        }
+      }
+      .add-new-phone {
+        background-color: transparent;
+        box-shadow: none;
+      }
+      .images-container {
+        .input-file {
+          background-color: transparent !important;
+          color: gray !important;
+          &:hover { background-color: $blue-dark !important; color: #FFF !important; }
+        }
+        .title { color: $mainColor; }
+      }
+      .theme { box-shadow: none !important; }
+      .MuiTypography-root { color: $mainColor; }
+      .social-links {
+        .social {
+          border-bottom-color: #444;
+          background-color: transparent !important;
+          .text { border: 0 !important; }
+          .text h5 { background-color: #222; box-shadow: none; border-bottom: none !important; }
+        }
+      }
+      .personal-part-container {
+        .contact-information {
+          @extend %importDarkBoxShadow;
+          background-color: $darkBg;
+          > h3 { color: $mainColor; }
+          ul { li { color: gray; border-bottom-color: #444; } }
+        }
+      }
+    }
+  }
+
+
+  .item-notification {
+    .right {
+      .title {
+        color: $mainColor !important;
+      }
+    }
+  }
+
+  .logs-container {
+    > h1 { color: #FFF; }
+    .logs {
+      .log {
+        background-color: $darkBg;
+        border-color: transparent;
+        > .text {
+          h3 { color: $mainColor; }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import '../../assets/scss/global-assets';
+.navbar {
+  height: 50px;
+  border-bottom: 0.5px solid #ddd;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: #FFF;
+  .wrapper {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    .search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid lightgray;
+      padding: 5px;
+      border-radius: 5px;
+      width: 25%;
+      input {
+        border: none;
+        outline: none;
+        padding-left: 5px;
+        background-color: transparent;
+      }
+    }
+    .items {
+      display: flex;
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-right: 15px;
+        cursor: pointer;
+        svg { margin-right: 3px; color: gray; }
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .counter {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #cd3737;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #FFF;
+          position: absolute;
+          font-size: 10px;
+          top: -5px;
+          right: -5px;
+        }
+        &.lang-item {
+          span {
+            @include flexBox(flex-start, center);
+            svg { margin-right: 6px; }
+          }
+          .MuiMenuItem-root:first-of-type { background-color: #ddd !important; }
+        }
+        &.notify-item {
+
+        }
+      }
+    }
+  }
+}
+
+.item-notification {
+  @include transition();
+  &:hover { background-color: #f1f1f1; }
+  display: flex;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  .left { margin-right: 20px; flex: 0.3; }
+  .right { flex: 5; }
+  p { color: gray; font-size: 12px; padding: 3px 0; max-width: 320px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  h3 {
+    @include flexBox(space-between, center);
+    span {
+      color: gray;
+      font-size: 11px;
+      font-weight: lighter;
+    }
+  }
+  img { width: 50px; height: 50px; border-radius: 50%; }
+}
+.MuiPaper-root {
+  width: 500px !important;
+  overflow-y: scroll !important;
+  &::-webkit-scrollbar { display: none; }
+}
+
+.css-m0ca6m-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  width: 500px !important;
+}

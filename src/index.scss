@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+* {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+.actions {
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    button {
+
+    }
+  }
+}
+
+.main-container {
+  display: flex;
+  .sidebar {
+    position: fixed;
+    width: 290px;
+  }
+  .page-container {
+    padding-left: 290px;
+    flex: 6;
+  }
+}
+
+
+.css-f779bt-MuiStack-root {
+  max-width: 100%;
+}
+
+.css-fk7w2j-MuiPaper-root-MuiCard-root {
+  width: 100% !important;
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root { width: 100% !important; }
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #444;
+  position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+.App.dark {
+  .MuiMenuItem-root {
+    color: #FFF !important;
+  }
+}
+
+.MuiAlert-standard, .MuiAlert-filled, .MuiAlert-outlined { width: 100% !important; }
+.grid-item- { width: 96% !important }
+
+.css-m0ca6m-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  width: 500px !important;
+}

@@ -1,0 +1,7 @@
+$mainColor: lightgray;
+$darkBg: #222;
+$boxShadowColor: #000;
+
+%importDarkBoxShadow {
+  box-shadow: 0 2px 3px $boxShadowColor;
+}

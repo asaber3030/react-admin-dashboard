@@ -1,0 +1,72 @@
+@import '../../../assets/scss/global-assets';
+
+.form-container {
+  @include flexBox(flex-start);
+  .left-content {
+    flex: 2;
+    padding: 25px;
+  }
+  .right-content {
+    padding-top: 25px;
+    flex: 1.5;
+    > h1 {
+      @include flexBox(flex-start, center);
+      &:not(:first-of-type) { border-top: 1px solid #DDD; padding-top: 15px; }
+      span {
+        font-family: $code-font;
+        background-color: #2f78e0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 0 6px;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+    }
+    h2 { display: none; }
+    .display-prop {
+      .prop {
+        padding: 10px 0;
+        &:not(:last-of-type) { border-bottom: 1px solid #DDD; }
+        h5 {
+          margin: 5px 0;
+          code { font-family: $code-font; background-color: #ddd; color: #000; font-weight: bold; padding: 0 3px; font-size: 13px; }
+          span { font-family: $code-font; font-weight: lighter }
+        }
+        .add-red { color: $red-dark; font-weight: 400 }
+      }
+    }
+  }
+  > h1 {
+    font-weight: 900;
+    margin: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #DDD;
+    display: flex;
+    align-items: center;
+    svg { margin-right: 15px; }
+  }
+  .inputs-collection {
+    padding: 18px 0;
+    &:not(:last-of-type) { border-bottom: 1px solid #DDD; }
+    h2 { color: #7451f8; display: flex;
+      align-items: center;
+      svg { margin-right: 15px; } }
+    p {
+      margin: 5px;
+      font-size: 15px;
+      color: gray;
+      code { font-family: $code-font; background-color: #ddd; color: #000; font-weight: bold; padding: 0 3px; font-size: 13px; }
+    }
+    .inputs-show {
+      @include boxShadow();
+      padding: 8px 25px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background-color: #fff;
+      .add-divider:not(:last-of-type) {
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+  }
+}

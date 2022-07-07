@@ -1,0 +1,39 @@
+@import "../../assets/scss/global-assets";
+.logs-container {
+  padding: 10px;
+  width: 65%;
+  margin: 10px auto;
+  > h1 { margin-bottom: 18px; }
+  .logs {
+    .log {
+      background-color: #f9f9f9;
+      border: 1px solid #DDD;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden;
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100px;
+        background-color: #7451f8;
+        @include flexBox(center, center);
+        svg {
+          color: #FFF;
+        }
+      }
+      .text {
+        max-width: 80%;
+        h3 { margin: 0 0 5px 0 }
+        p {
+          color: gray;
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+}

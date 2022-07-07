@@ -1,0 +1,35 @@
+@import '../../../assets/scss/global-assets';
+
+.chip-container {
+  margin: 0 auto;
+  width: 50%;
+  > h1 {
+    @include flexBox(center, center);
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+    svg { font-size: 40px; margin-right: 10px; }
+  }
+  .chips-collection {
+    @include boxShadow();
+    border: 1px solid #f4f4f4;
+    background-color: #FFF;
+    padding: 15px 20px;
+    border-radius: 5px;
+    &:not(:last-of-type) { border-bottom: 1px solid #DDd; }
+    h1 { margin: 0 0 10px 0; font-weight: 300; }
+    margin-bottom: 5px;
+    .css-w4z10b-MuiStack-root { margin-bottom: 10px; }
+    .d-flex { display: flex; gap: 5px; }
+    .badge {
+      @include flexBox(center, center);
+      padding: 4px 10px;
+      border-radius: 3px;
+      span { margin-left: 5px; padding: 3px; border-radius: 4px; }
+      &.badge.badge-error { background-color: $red-dark; color: #FFF; span { background-color: $red-light; } }
+      &.badge.badge-success { background-color: $green-dark; color: #FFF; span { background-color: $green-light; } }
+      &.badge.badge-secondary { background-color: #333; color: #FFF; span { background-color: #444; } }
+      &.badge.badge-primary { background-color: $blue-dark; color: #FFF; span { background-color: $blue-light; } }
+    }
+  }
+}

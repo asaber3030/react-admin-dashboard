@@ -1,0 +1,71 @@
+@import '../../assets/scss/global-assets';
+.notifications-container {
+  @include boxShadow(2px);
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 25px 20px;
+  .title {
+    @include flexBox(space-between, center);
+    padding-bottom: 10px;
+    margin-left: 15px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .notifications {
+    padding: 10px 0 0 15px;
+    h3 {
+      color: gray;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    .collection {
+      .notification {
+        @include flexBox();
+        transition: .1s ease-in-out;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 8px;
+        gap: 4px;
+        .img {
+          position: relative;
+          img { width: 60px; height: 60px; border-radius: 50%; }
+          .action {
+            @include flexBox(center, center);
+            position: absolute;
+            bottom: 0;
+            right: -5px;
+            background-color: #7451f8;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: #FFF !important;
+            svg { font-size: 16px; }
+          }
+        }
+        .text {
+          padding: 0 10px;
+          h4 { font-weight: 400 !important; }
+          p { font-size: 14px; color: gray; }
+        }
+        &.not-read { background-color: rgb(33 112 159 / 14%); &:hover { background-color: rgb(33 112 159 / 14%); } }
+        &:hover { background-color: #f3f3f3; }
+        &:not(:last-of-type) { margin-bottom: 3px; }
+      }
+    }
+  }
+}
+.MuiPaper-root {
+  width: 300px !important;
+  box-shadow:  0 2px 5px #ddd !important;
+  svg { color: gray }
+  .MuiMenuItem-root {
+    @include flexBox(flex-start, center);
+    border-radius: 8px;
+    margin: 0 5px;
+    padding: 6px 15px;
+    svg { margin-right: 15px; }
+  }
+
+}

@@ -1,0 +1,57 @@
+@import '../../assets/scss/global-assets';
+
+.data-table {
+  padding: 0 10px;
+  width: 97%;
+  margin: auto;
+  max-height: 800px;
+  height: 630.5px;
+  .top-data {
+    @include flexBox(space-between, center);
+    .title {
+      margin: 15px 0;
+      color: gray;
+      svg { font-size: 30px }
+    }
+    .actions {
+      @include flexBox(center, center);
+      button {
+        margin-right: 8px;
+        @include flexBox(center, center);
+        svg { font-size: 18px; }
+      }
+    }
+  }
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+  }
+  .bold { font-weight: bold }
+  .actions-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      padding: 3px 10px;
+      border-radius: 5px;
+      margin-right: 3px;
+      cursor: pointer;
+
+      border: 1px solid transparent;
+      &.view-btn { border-color: rgb(66 166 237 / 50%); color: #13517e; &:hover { background-color: rgba(66, 166, 237, 1); color: #fff; } }
+      &.delete-btn { border-color: #cd3e3e70; color: #b50f0f; &:hover { background-color: #b50f0f ; color: #fff; } }
+    }
+  }
+}
+
+.status-order-0 { color: $red-dark; @include flexBox(center, center); svg { margin-right: 5px; } }
+.status-order-1 { color: $yellow-dark; @include flexBox(center, center); svg { margin-right: 5px; } }
+.status-order-2 { color: $blue-dark; @include flexBox(center, center); svg { margin-right: 5px; } }
+.status-order-3 { color: $green-dark; @include flexBox(center, center); svg { margin-right: 5px; } }

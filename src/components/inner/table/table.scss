@@ -1,0 +1,31 @@
+@import '../../../assets/scss/global-assets';
+
+.table-container {
+  padding: 24px;
+  h1 {
+    color: gray;
+    font-size: 35px;
+    svg { margin-right: 5px; font-size: 35px; }
+  }
+
+  .content {
+    @include flexBox();
+    gap: 24px;
+    .left-content {
+      flex: 3;
+      .table-collection {
+        padding: 10px;
+        > h3 {
+          @include flexBox(flex-start, center);
+          color: #7451f8;
+          margin: 10px 0;
+          svg { margin-right: 5px; }
+        }
+
+      }
+    }
+    .right-content {
+      flex: 1.5;
+    }
+  }
+}

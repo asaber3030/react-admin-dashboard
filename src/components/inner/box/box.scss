@@ -1,0 +1,31 @@
+@import '../../../assets/scss/global-assets';
+body {
+  background-color: #f9f9f9;
+}
+
+.box-container {
+
+  > h1 {
+    padding: 10px;
+    font-size: 40px;
+    color: #555;
+    font-weight: 900;
+    text-align: center;
+    @include flexBox(center, center);
+    svg { margin-right: 10px; font-size: 40px; }
+  }
+  .container-com {
+    width: 65%;
+    margin: 10px auto;
+    .box {
+      width: 99%;
+      margin: 5px auto;
+      .MuiPaper-root { margin: 5px auto; width: 99%; }
+      > h2 { margin: 10px 0; color: gray; }
+    }
+  }
+}
+
+.MuiPaper-root {
+  width: 100% !important;
+}
