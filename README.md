@@ -1,5 +1,62 @@
 # Admin Dashboard
+
+## Available Pages in this dashboard
+### Components
+1. Charts
+  1-1. Area Charts
+  2-1. Line Charts
+  3-1. Pie Charts
+  4-1. Radar Charts
+  5-1. Radial Charts
+  6-1. Scattering Charts
+  7-1. Bar Charts
+2. Alerts
+3. Forms & Text Fields & Select
+4. Boxes
+5. Grid
+6. Tables
+7. Buttons
+8. Chips
+
+### Pages
+1. Users
+2. Products
+3. Orders
+4. Delivery men
+5. Add User, Add Product
+6. Logs
+7. Settings
+  1-7. Website Settings
+  2-7. Account Settings
+  3-7. Email Addresses
+  4-7. Phone Numbers
+  5-7. Social Media
+  6-7. Profile Picture
+  7-7. Personal Information
+8. Themes ( Dark, Light )
+
+# Some Images from Dashboard
+
 ![Dashboard Images](./taken-images/01.png)
+![Dashboard Images](./taken-images/02.png)
+![Dashboard Images](./taken-images/03.png)
+![Dashboard Images](./taken-images/04.png)
+![Dashboard Images](./taken-images/05.png)
+![Dashboard Images](./taken-images/06.png)
+![Dashboard Images](./taken-images/07.png)
+![Dashboard Images](./taken-images/08.png)
+![Dashboard Images](./taken-images/09.png)
+![Dashboard Images](./taken-images/10.png)
+![Dashboard Images](./taken-images/11.png)
+![Dashboard Images](./taken-images/12.png)
+![Dashboard Images](./taken-images/13.png)
+![Dashboard Images](./taken-images/14.png)
+![Dashboard Images](./taken-images/15.png)
+![Dashboard Images](./taken-images/16.png)
+![Dashboard Images](./taken-images/17.png)
+![Dashboard Images](./taken-images/18.png)
+![Dashboard Images](./taken-images/19.png)
+![Dashboard Images](./taken-images/30.png)
 
 
 # Getting Started with Create React App
