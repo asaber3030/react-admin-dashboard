@@ -3,13 +3,13 @@
 ## Available Pages in this dashboard
 ### Components
 1. Charts
-  1. Area Charts
-  2. Line Charts
-  3. Pie Charts
-  4. Radar Charts
-  5. Radial Charts
-  6. Scattering Charts
-  7. Bar Charts
+  - Area Charts
+  - Line Charts
+  - Pie Charts
+  - Radar Charts
+  - Radial Charts
+  - Scattering Charts
+  - Bar Charts
 2. Alerts
 3. Forms & Text Fields & Select
 4. Boxes
@@ -26,13 +26,13 @@
 5. Add User, Add Product
 6. Logs
 7. Settings
-  1. Website Settings
-  2. Account Settings
-  3. Email Addresses
-  4. Phone Numbers
-  5. Social Media
-  6. Profile Picture
-  7. Personal Information
+  - Website Settings
+  - Account Settings
+  - Email Addresses
+  - Phone Numbers
+  - Social Media
+  - Profile Picture
+  - Personal Information
 8. Themes ( Dark, Light )
 
 # Some Images from Dashboard
