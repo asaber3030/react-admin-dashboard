@@ -3,13 +3,13 @@
 ## Available Pages in this dashboard
 ### Components
 1. Charts
-  1-1. Area Charts
-  2-1. Line Charts
-  3-1. Pie Charts
-  4-1. Radar Charts
-  5-1. Radial Charts
-  6-1. Scattering Charts
-  7-1. Bar Charts
+  1. Area Charts
+  2. Line Charts
+  3. Pie Charts
+  4. Radar Charts
+  5. Radial Charts
+  6. Scattering Charts
+  7. Bar Charts
 2. Alerts
 3. Forms & Text Fields & Select
 4. Boxes
@@ -26,13 +26,13 @@
 5. Add User, Add Product
 6. Logs
 7. Settings
-  1-7. Website Settings
-  2-7. Account Settings
-  3-7. Email Addresses
-  4-7. Phone Numbers
-  5-7. Social Media
-  6-7. Profile Picture
-  7-7. Personal Information
+  1. Website Settings
+  2. Account Settings
+  3. Email Addresses
+  4. Phone Numbers
+  5. Social Media
+  6. Profile Picture
+  7. Personal Information
 8. Themes ( Dark, Light )
 
 # Some Images from Dashboard
@@ -56,8 +56,7 @@
 ![Dashboard Images](./taken-images/17.png)
 ![Dashboard Images](./taken-images/18.png)
 ![Dashboard Images](./taken-images/19.png)
-![Dashboard Images](./taken-images/30.png)
-
+![Dashboard Images](./taken-images/20.png)
 
 # Getting Started with Create React App
 
